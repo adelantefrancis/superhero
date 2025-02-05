@@ -1,0 +1,26 @@
+[
+  {
+    "Mobile": "(000)-222-111",
+    "Email": "theflash@justiceleague.com",
+    "Fullname": "Barry Allen",
+    "Qoute": "My name is Barry Allen, and I am the fastest man alive.",
+    "ProfilePicture": "flash",
+    "Alias": "The Flash"
+  },
+  {
+    "Mobile": "(000)-222-333",
+    "Email": "batman@justiceleague.com",
+    "Fullname": "Bruce Wayne",
+    "Qoute": "It's not who we are underneath, but what we do that defines us",
+    "ProfilePicture": "batman",
+    "Alias": "Batman"
+  },
+  {
+    "Mobile": "(000)-222-222",
+    "Email": "superman@justiceleague.com",
+    "Fullname": "Clark Kent",
+    "Qoute": "It's never as bad as it seems. You're much stronger than you think you are. Trust me.",
+    "ProfilePicture": "superman",
+    "Alias": "Superman"
+  }
+]

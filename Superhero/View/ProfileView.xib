@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileView" customModule="Superhero" customModuleProvider="target">
+            <connections>
+                <outlet property="alias" destination="e6Y-dP-Vua" id="Vhf-WH-hgm"/>
+                <outlet property="email" destination="nPG-h7-XPT" id="EQV-FD-TtA"/>
+                <outlet property="fullName" destination="naS-Sr-M4C" id="BMb-he-Lzw"/>
+                <outlet property="mobileNumber" destination="MF5-fj-pZt" id="JpB-qz-2Of"/>
+                <outlet property="profilePicture" destination="dI9-yh-ZyZ" id="jww-gy-CIa"/>
+                <outlet property="view" destination="iN0-l3-epB" id="aO8-12-whP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geB-kI-jyS">
+                    <rect key="frame" x="-41.666666666666657" y="63.666666666666671" width="579.66666666666663" height="50.666666666666671"/>
+                    <color key="backgroundColor" name="myMustard"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batman" translatesAutoresizingMaskIntoConstraints="NO" id="dI9-yh-ZyZ">
+                    <rect key="frame" x="20" y="39" width="83.333333333333329" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="R1P-ol-YBB"/>
+                        <constraint firstAttribute="width" secondItem="dI9-yh-ZyZ" secondAttribute="height" multiplier="1:1.2" id="yKO-n0-CCh"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="x6E-yw-fu5">
+                    <rect key="frame" x="103.33333333333334" y="71" width="289.66666666666663" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clark Kent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naS-Sr-M4C">
+                            <rect key="frame" x="0.0" y="0.0" width="289.66666666666669" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@Superman" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-dP-Vua">
+                            <rect key="frame" x="0.0" y="20.333333333333329" width="289.66666666666669" height="15.666666666666664"/>
+                            <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wpM-6r-ckR">
+                    <rect key="frame" x="20" y="149" width="353" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF5-fj-pZt">
+                            <rect key="frame" x="0.0" y="0.0" width="353" height="21"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <color key="tintColor" name="myCharcoal"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="(000)-123-2123" image="phone.fill" catalog="system">
+                                <color key="titleColor" name="myCharcoal"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPG-h7-XPT">
+                            <rect key="frame" x="0.0" y="31" width="353" height="21"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <color key="tintColor" name="myCharcoal"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="superman@superheroes.com" image="envelope.fill" catalog="system">
+                                <color key="titleColor" name="myCharcoal"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="x6E-yw-fu5" firstAttribute="centerY" secondItem="dI9-yh-ZyZ" secondAttribute="centerY" id="8l6-eB-osd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wpM-6r-ckR" secondAttribute="bottom" id="Clm-NA-wBa"/>
+                <constraint firstItem="x6E-yw-fu5" firstAttribute="leading" secondItem="dI9-yh-ZyZ" secondAttribute="trailing" id="DTS-iA-T2u"/>
+                <constraint firstItem="geB-kI-jyS" firstAttribute="centerY" secondItem="x6E-yw-fu5" secondAttribute="centerY" id="HCo-Se-trL"/>
+                <constraint firstItem="dI9-yh-ZyZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gyo-1W-l0h"/>
+                <constraint firstItem="wpM-6r-ckR" firstAttribute="top" secondItem="dI9-yh-ZyZ" secondAttribute="bottom" constant="10" id="jlk-fa-ILt"/>
+                <constraint firstItem="wpM-6r-ckR" firstAttribute="leading" secondItem="dI9-yh-ZyZ" secondAttribute="leading" id="kZ3-pK-ZXc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wpM-6r-ckR" secondAttribute="trailing" constant="20" id="nWs-FH-JV3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x6E-yw-fu5" secondAttribute="trailing" id="oBx-NF-5G0"/>
+                <constraint firstItem="geB-kI-jyS" firstAttribute="height" secondItem="x6E-yw-fu5" secondAttribute="height" multiplier="1.4" id="oGx-BQ-ufD"/>
+                <constraint firstItem="geB-kI-jyS" firstAttribute="centerX" secondItem="x6E-yw-fu5" secondAttribute="centerX" id="tkp-Cy-qkD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="dI9-yh-ZyZ" secondAttribute="top" constant="20" id="xq5-23-mak"/>
+                <constraint firstItem="geB-kI-jyS" firstAttribute="width" secondItem="x6E-yw-fu5" secondAttribute="width" multiplier="2" id="zgx-mI-8lc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.1679389312977" y="-175"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="batman" width="183" height="275"/>
+        <image name="envelope.fill" catalog="system" width="128" height="85"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="myCharcoal">
+            <color red="0.24300000071525574" green="0.24300000071525574" blue="0.24300000071525574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="myMustard">
+            <color red="0.98000001907348633" green="0.67500001192092896" blue="0.3449999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
